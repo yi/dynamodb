@@ -1,4 +1,12 @@
 
+Following modification made on the original [dynamodb](https://github.com/yi/dynamodb) module
+
+ * return raw data rather then instance of Item/Model, for the ease of local cache
+
+
+---
+
+
 `dynamodb` is a [DynamoDB][5] data mapper for [node.js][1].
 
 ## Features
@@ -269,8 +277,8 @@ hashkeys.
 
 ```js
 BlogPost.create({
-  email: 'werner@example.com', 
-  title: 'Expanding the Cloud', 
+  email: 'werner@example.com',
+  title: 'Expanding the Cloud',
   content: 'Today, we are excited to announce the limited preview...'
   }, function (err, post) {
     console.log('created blog post', post.get('title'));
@@ -658,7 +666,7 @@ var GameScore = dynamo.define('GameScore', {
 });
 ```
 
-Now we can query against the global index 
+Now we can query against the global index
 
 ```js
 GameScore
@@ -670,7 +678,7 @@ GameScore
 
 When can also configure the attributes projected into the index.
 By default all attributes will be projected when no Projection parameter is
-present 
+present
 
 ```js
 var GameScore = dynamo.define('GameScore', {
@@ -769,7 +777,7 @@ This api is very similar to the query api.
 Account.scan().exec(callback);
 
 // scan all accounts, this time loading all results
-// note this will potentially make several calls to DynamoDB 
+// note this will potentially make several calls to DynamoDB
 // in order to load all results
 Account
   .scan()
@@ -1017,7 +1025,7 @@ Logging can be enabled to provide detailed information on data being sent and re
 By default logging is turned off.
 
 ```js
-dynamo.log.level('info'); // enabled INFO log level 
+dynamo.log.level('info'); // enabled INFO log level
 ```
 
 Logging can also be enabled / disabled at the model level.

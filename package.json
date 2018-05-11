@@ -1,17 +1,18 @@
 {
-  "name": "dynamodb",
+  "name": "dynamodb-raw",
   "version": "1.1.1",
   "contributors": [
     "Ryan Fitzgerald <ryan@codebrewstudios.com>",
-    "Greg Sabia Tucker <greg@narrowlabs.com>"
+    "Greg Sabia Tucker <greg@narrowlabs.com>",
+    "Yi <yi2004@gmail.com>"
   ],
-  "description": "DynamoDB data mapper for node.js",
+  "description": "A [raw] version of DynamoDB data mapper for node.js",
   "main": "index.js",
   "scripts": {
     "test": "make test",
     "dynamodb-local": "./test/bin/dynamodb-local"
   },
-  "repository": "git://github.com/baseprime/dynamodb.git",
+  "repository": "git@github.com:yi/node-dynamodb-raw.git",
   "keywords": [
     "datamapper",
     "DynamoDB",

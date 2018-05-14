@@ -1,5 +1,5 @@
 
-### Following modification made on the original [dynamodb](https://github.com/yi/dynamodb) module
+### Following modifications have been made based on the original [dynamodb](https://github.com/yi/dynamodb) module
 
  * Return raw data rather then instance of Item/Model, for the ease of local cache
  * Change value of `DATE` data type to [Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)

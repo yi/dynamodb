@@ -4,6 +4,7 @@
  * Return raw data rather then instance of Item/Model, for the ease of local cache
  * Change value of `DATE` data type to [Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)
  * Change auto timestamps to [Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)
+ * When auto timestamp is used as a RangeKey, the AttributeType of timestamp will be "N"(Number)
 
 ---
 

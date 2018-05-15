@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-raw",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "contributors": [
     "Ryan Fitzgerald <ryan@codebrewstudios.com>",
     "Greg Sabia Tucker <greg@narrowlabs.com>",

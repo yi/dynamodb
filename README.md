@@ -5,6 +5,7 @@
  * Change value of `DATE` data type to [Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)
  * Change auto timestamps to [Unix Epoch Time](https://en.wikipedia.org/wiki/Unix_time)
  * When auto timestamp is used as a RangeKey, the AttributeType of timestamp will be "N"(Number)
+ * Add .sleepEach(millisecons) in scan and query. Use sleepEach() with limit() will effeciently reduce DynamoDB peak-time load.
 
 ---
 
